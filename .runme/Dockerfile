@@ -1,5 +1,5 @@
-FROM bitnami/nginx:latest
+FROM node:latest
 WORKDIR /app
-COPY public /usr/share/nginx/html
+COPY . .
 RUN npm run build
-ENTRYPOINT ls
+ENTRYPOINT npm run start
