@@ -2,7 +2,7 @@ version: 1.0
 publish: app
 services:
   app:
-    command: ls
+    command: npm run start
     build:
       type: dockerfile
       config: ./.runme/Dockerfile
