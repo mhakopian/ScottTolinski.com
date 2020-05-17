@@ -2,7 +2,7 @@ version: 1.0
 publish: app
 services:
   app:
-    command: npm install --global gatsby && npm run start
+    command: npm i && npm install --global gatsby && npm run start
     build:
       type: dockerfile
       config: ./.runme/Dockerfile
